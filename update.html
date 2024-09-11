@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Status Update</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .update-section {
+      background-color: #336699;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .update-options {
+      list-style: none;
+      padding: 0;
+    }
+
+    .update-options li {
+      margin-bottom: 10px;
+    }
+
+    .update-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button>Home</button>
+      <button>LogOut</button>
+    </div>
+
+    <div class="update-section">
+      <h2>Update</h2>
+      <p>State will Change</p>
+      <ul class="update-options">
+        <li><input type="radio" name="status" value="received"> Received</li>
+        <li><input type="radio" name="status" value="ready_for_shipping"> Ready for Shipping</li>
+        <li><input type="radio" name="status" value="out_for_delivery"> Out For Delivery</li>
+      </ul>
+      <button class="update-button">Update</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Role</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container {
+        text-align: center;
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .options {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .option {
+        margin: 0 10px;
+    }
+    
+    .role-button {
+        background-color: #4CAF50;
+        color:white;
+        padding: 15px 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .role-button:hover {
+        background-color: #45a049;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    </style>
+    
+
+<body>
+    <div class="container">
+        <h1>Event Management System</h1>
+        <h2>Select Your Role</h2>
+        <div class="options">
+            <div class="option">
+                <a href="admin.html">
+                    <button class="role-button"><a href="AdminLogin.html">Admin</a></button>
+                </a>
+            </div>
+            <div class="option">
+                <a href="login.html">
+                    <button class="role-button"><a href="UserLogin.html">User</a></button>
+                </a>
+            </div>
+            <div class="option">
+                <a href="vendor.html">
+                    <button class="role-button"><a href="VendorLogin.html">Vendor</a></button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

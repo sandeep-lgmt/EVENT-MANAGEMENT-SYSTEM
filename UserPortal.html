@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Portal</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #333;
+}
+
+.vendor {
+  position: relative;
+  display: inline-block;
+}
+
+.vendor-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.vendor-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.vendor-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.vendor:hover .vendor-content {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Welcome User</h1>
+  </div>
+
+  <div class="Vendor">
+    <button class="button">Vendor</button>
+    <div class="vendor-content">
+      <a href="#">Catering</a>
+      <a href="#">Florist</a>
+      <a href="#">Decoration</a>
+      <a href="#">Lighting</a>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="button">Vendor</button>
+    <button class="button">Cart</button>
+    <button class="button">Guest List</button>
+    <button class="button">Order Status</button>
+  </div>
+  
+  <button class="button" style="margin-top: 20px;">LogOut</button>
+</div>
+
+</body>
+</html>

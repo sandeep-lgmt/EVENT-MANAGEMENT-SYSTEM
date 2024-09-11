@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .buttons .login {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .buttons .cancel {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body background="Axciom.jpg">
+
+<div class="login-container">
+    <h2>Event Management System</h2>
+    <form>
+        <div class="input-group">
+            <label for="userId">User Id</label>
+            <input type="text" id="userId" name="userId" value="Admin">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" value="Admin">
+        </div>
+        <div class="buttons">
+            <button type="button" class="cancel">Cancel</button>
+            <button type="button" class="login" onclick="login()"><a href="Options.html">Login</a></button>
+        </div>
+    </form>
+</div>
+
+<script>
+    function login() {
+        const userId = document.getElementById("userId").value;
+        const password = document.getElementById("password").value;
+        if (userId === "Admin" && password === "Admin") {
+            alert("Login Successful");
+        } else {
+            alert("Invalid User ID or Password");
+        }
+    }
+</script>
+
+</body>
+</html>
