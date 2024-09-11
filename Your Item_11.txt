@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #D3D3D3;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049; 
+}
+
+.product {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #4285F4; 
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  margin-bottom: 15px;
+}
+
+.product-button {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  padding: 8px 15px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-button:hover {
+  background-color: #45a049; 
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="button">Home</div>
+  <div class="button">Products</div>
+  <div class="button">Vendor Name</div>
+  <div class="button">LogOut</div>
+
+  <div>
+    <div class="product">
+      <div class="product-title">Product 1</div>
+      <div class="product-price">Price</div>
+      <button class="product-button">Add to Cart</button>
+    </div>
+    <div class="product">
+      <div class="product-title">Product 2</div>
+      <div class="product-price">Price</div>
+      <button class="product-button">Add to Cart</button>
+    </div>
+    <div class="product">
+      <div class="product-title">Product 3</div>
+      <div class="product-price">Price</div>
+      <button class="product-button">Add to Cart</button>
+    </div>
+    <div class="product">
+      <div class="product-title">Product 4</div>
+      <div class="product-price">Price</div>
+      <button class="product-button">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

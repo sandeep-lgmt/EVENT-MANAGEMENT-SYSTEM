@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .welcome-message {
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button>Home</button>
+      <button>LogOut</button>
+    </div>
+
+    <div class="welcome-message">
+      <h2>Welcome Admin</h2>
+    </div>
+
+    <div class="buttons">
+      <button class="button"><a href="MaintaineUser.html">Maintain User</a></button>
+      <button class="button"><a href="Maintain Vendor.html">Maintain Vendor</a></button>
+    </div>
+  </div>
+</body>
+</html>
